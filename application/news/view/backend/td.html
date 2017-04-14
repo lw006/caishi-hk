@@ -1,0 +1,13 @@
+<td><input type="checkbox" name="id[]" value="{$vo.id}"></td>
+<td>{$vo.id}</td>
+<td>{$vo.cid}</td>
+<td>{$vo.title|high_light=$Request.param.title}</td>
+<td>{$vo.content|high_light=$Request.param.content}</td>
+<td style="padding: 0">
+    <input type="number" name="sort[{$vo.id}]" value="{$vo.sort}" style="width: 60px;"
+        class="input-text text-c order-input" data-id="{$vo.id}"></td>
+<td>{$vo.state}</td>
+<td>{$vo.create_time}</td>
+<td>{$vo.update_time}</td>
+<td>{$vo.delete_time}</td>
+<td>{$vo.admin_id}</td>

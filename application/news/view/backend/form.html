@@ -1,0 +1,7 @@
+<form class="mb-20" method="get" action="{:\\think\\Url::build($Request.action)}">
+    <input type="text" class="input-text" style="width:250px" placeholder="标题" name="title" value="{$Request.param.title}" >
+    <input type="text" class="input-text" style="width:250px" placeholder="内容" name="content" value="{$Request.param.content}" >
+    <input type="text" class="input-text Wdate" style="width:250px" placeholder="创建时间" name="create_time" value="{$Request.param.create_time}" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal} >
+    <input type="text" class="input-text Wdate" style="width:250px" placeholder="修改时间" name="update_time" value="{$Request.param.update_time}" {literal} onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" {/literal} >
+    <button type="submit" class="btn btn-success"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+</form>
